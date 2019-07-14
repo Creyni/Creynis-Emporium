@@ -283,7 +283,7 @@ table {
     width: 100%
 }
 
-table thead tr {
+thead {
     background: url(bg-th.gif);
     color: #f0f0f0;
 }
