@@ -551,10 +551,10 @@ function toggleCols() {
     });
 }
 function getWorksheetUrl(spreadsheetId, worksheetId) {
-    return "https://spreadsheets.google.com/feeds/list/" + spreadsheetId + "/" + worksheetId + "/public/values?alt=json";
+    return "https://googleapis.com/auth/spreadsheets.readonly" + spreadsheetId + "/" + worksheetId + "/public/values?alt=json";
 }
 function getSpreadsheetUrl(spreadsheetId) {
-    return "https://spreadsheets.google.com/feeds/worksheets/" + spreadsheetId + "/public/basic?alt=json";
+    return "https://googleapis.com/auth/spreadsheets.readonly" + spreadsheetId + "/public/basic?alt=json";
 }
 function getValue(field) {
     if (field && field.$t) return field.$t;
