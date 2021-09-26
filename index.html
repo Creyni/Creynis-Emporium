@@ -18,6 +18,7 @@
 	$(document).ready(function(){
 	    $('div#trainer-info').hide();
 	    $('table').stickyTableHeaders();
+            $('table').stickyTableHeaders({fixedOffset: [new-offset]});
             $('button#toggleInfo').click(function(){
                $('div#trainer-info').toggle();
             });
